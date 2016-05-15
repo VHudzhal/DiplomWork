@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DiplomWork</class>
+ <widget class="QMainWindow" name="DiplomWork">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>808</width>
+    <height>514</height>
+   </rect>
+  </property>
+  <property name="mouseTracking">
+   <bool>true</bool>
+  </property>
+  <property name="windowTitle">
+   <string>DiplomWork</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>0</y>
+      <width>131</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="label_3">
+       <property name="styleSheet">
+        <string notr="true">font: 75 10pt &quot;Times New Roman&quot;;</string>
+       </property>
+       <property name="text">
+        <string>coordinate data</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTableWidget" name="CoordWidget">
+       <attribute name="horizontalHeaderDefaultSectionSize">
+        <number>36</number>
+       </attribute>
+       <attribute name="horizontalHeaderMinimumSectionSize">
+        <number>29</number>
+       </attribute>
+       <attribute name="verticalHeaderDefaultSectionSize">
+        <number>19</number>
+       </attribute>
+       <row>
+        <property name="text">
+         <string/>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string/>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string/>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string/>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string/>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string/>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string/>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string/>
+        </property>
+       </row>
+       <column>
+        <property name="text">
+         <string>xAxis</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>yAxis</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>zAxis</string>
+        </property>
+       </column>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>380</y>
+      <width>771</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QCheckBox" name="checkBox">
+       <property name="text">
+        <string>Auto</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Expanding</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>68</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QSlider" name="moverecords">
+       <property name="styleSheet">
+        <string notr="true">color: rgb(76, 53, 255);
+background-color: rgb(14, 38, 255);</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QSpinBox" name="nextentry"/>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_3">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>2</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="styleSheet">
+          <string notr="true">font: 75 11pt &quot;Times New Roman&quot;;</string>
+         </property>
+         <property name="text">
+          <string>time</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="timer"/>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="styleSheet">
+          <string notr="true">font: 75 10pt &quot;Times New Roman&quot;;</string>
+         </property>
+         <property name="text">
+          <string>number</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="recordnum"/>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>651</width>
+      <height>361</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 0);</string>
+    </property>
+    <zorder>CoordWidget</zorder>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>808</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuMenu">
+    <property name="title">
+     <string>Menu</string>
+    </property>
+    <addaction name="actionOpen_File"/>
+    <addaction name="actionSelectObject"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <addaction name="menuMenu"/>
+  </widget>
+  <action name="actionOpen_File">
+   <property name="text">
+    <string>Open File</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionSelectObject">
+   <property name="text">
+    <string>SelectObject</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>nextentry</tabstop>
+  <tabstop>recordnum</tabstop>
+  <tabstop>timer</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>moverecords</sender>
+   <signal>sliderMoved(int)</signal>
+   <receiver>nextentry</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>326</x>
+     <y>455</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>503</x>
+     <y>455</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>nextentry</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>moverecords</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>503</x>
+     <y>455</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>326</x>
+     <y>455</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>nextentry</sender>
+   <signal>valueChanged(QString)</signal>
+   <receiver>recordnum</receiver>
+   <slot>raise()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>503</x>
+     <y>455</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>741</x>
+     <y>485</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>CoordWidget</sender>
+   <signal>activated(QModelIndex)</signal>
+   <receiver>widget</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>688</x>
+     <y>153</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>645</x>
+     <y>154</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
