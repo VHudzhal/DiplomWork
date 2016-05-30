@@ -239,5 +239,50 @@ ui->centralWidget->setGeometry(QWidget::geometry());
 
 void Scene3D::drawFigure()
 {
+ qglColor(Qt::red);
+       glBegin(GL_QUADS);
+           glNormal3f(0,0,-1);
+           glVertex3f(-1,-1,0);
+           glVertex3f(-1,1,0);
+           glVertex3f(1,1,0);
+           glVertex3f(1,-1,0);
 
+       glEnd();
+         //dno cuba
+         glBegin(GL_QUADS);
+         glColor3f(0,1,0);
+             glNormal3f(0,0,-1);
+             glVertex3f(-1,-1,-1);
+             glVertex3f(-1,-1,1);
+             glVertex3f(1,1,1);
+             glVertex3f(1,-1,1);
+        glEnd();
+
+       //verh
+        glBegin(GL_QUADS);
+        glColor3f(1,1,1);
+        glNormal3f(0,0,-1);
+            glVertex3f(-1,1,-1);
+            glVertex3f(-1,1,1);
+            glVertex3f(1,1,1);
+            glVertex3f(1,1,-1);
+       glEnd();
+
+       glBegin(GL_QUADS);
+       qglColor(Qt::black);
+          glNormal3f(0,0,-1);
+           glVertex3f(-1,-1,-1);
+           glVertex3f(-1,-1,1);
+           glVertex3f(1,-1,1);
+           glVertex3f(1,-1,-1);
+       glEnd();
+
+       glBegin(GL_QUADS);
+       qglColor(Qt::darkRed);
+           glNormal3f(0,0,-1);
+           glVertex3f(-1,-1,0);
+           glVertex3f(-1,1,0);
+           glVertex3f(-1,1,0);
+           glVertex3f(-1,-1,0);
+       glEnd();
 }
